@@ -54,7 +54,7 @@
 
 /* COVER - main content 1 */
 
-.main__cover {
+.cover {
   width: 1100px;
   min-height: 757px;
   display: flex;
@@ -63,20 +63,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 180px;
 }
 
-.main__cover-overlay {
+.cover__overlay {
   position: absolute;
   background-color: rgb(0 0 0 / 0.6);
   width: 100%;
   height: 100%;
 }
 
-.main__cover-title {
+.cover__title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 165px 50px 0;
+  margin: 165px 50px 0;flex
   height: 385px;
   font-size: 100px;
   letter-spacing: 0.3em;
@@ -84,19 +85,94 @@
   color: white;
 }
 
-.main__cover-title-left {
-  /* display: block; */
-  /* text-align: start; */
+.cover__title-left {
+margin-bottom: 18px;
 }
 
-.main__cover-title-center {
-  /* display: block; */
+.cover__title-center {
   text-align: center;
   margin-right: -0.3em;
+  margin-bottom: 18px;
+
 }
 
-.main__cover-title-right {
+.cover__title-right {
   /* display: block; */
   text-align: end;
   margin-right: -0.3em;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 106px 50px 0;
+}
+
+.cover__description-text {
+  /* font-weight: 400; */
+  /* line-height: 127%; */
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: start;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  width: 256px;
+  height: 51px;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: none;
+}
+
+.lots {
+  padding: 0 24px;
+}
+
+.lots__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  padding-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.lots__cards-item {
+  display: flex;
+  flex-direction: column;
+  width: 334px;
+  height: 596px;
+  border: 3px solid #008a77;
+  padding: 48px 40px;
+  justify-content: space-between;
+
+}
+
+.lots__cards-item-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  /* color: #fff; */
+}
+
+.lots__cards-item-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* color: #fff; */
 }
